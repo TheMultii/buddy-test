@@ -1,0 +1,7 @@
+- pipeline: "nothing"
+  on: "CLICK"
+  refs:
+  - "refs/heads/master"
+  - ":default"
+  fail_on_prepare_env_warning: true
+  resources: "NANO"
