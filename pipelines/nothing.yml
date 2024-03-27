@@ -5,3 +5,11 @@
   - ":default"
   fail_on_prepare_env_warning: true
   resources: "NANO"
+  actions:
+  - action: "echo 'nice'"
+    type: "BUILD"
+    docker_image_name: "library/ubuntu"
+    docker_image_tag: "latest"
+    execute_commands:
+    - "echo 'nice'"
+    shell: "BASH"
