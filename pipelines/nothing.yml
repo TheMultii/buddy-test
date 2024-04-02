@@ -3,8 +3,8 @@
   refs:
   - "refs/heads/master"
   - ":default"
-  - "refs/heads/m2-pull"
   - "refs/heads/3"
+  - "refs/heads/m2-pull"
   priority: "HIGH"
   fail_on_prepare_env_warning: true
   resources: "NANO"
