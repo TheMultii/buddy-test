@@ -1,11 +1,7 @@
 - pipeline: "nothing"
   on: "CLICK"
   refs:
-  - "refs/heads/master"
-  - ":default"
-  - "refs/heads/m2-pull"
-  - "refs/heads/dadadada"
-  - "refs/heads/3"
+  - "*"
   priority: "HIGH"
   fail_on_prepare_env_warning: true
   resources: "NANO"
