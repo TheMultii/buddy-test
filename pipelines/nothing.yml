@@ -1,8 +1,10 @@
 - pipeline: "nothing"
-  on: "CLICK"
+  on: "SCHEDULE"
   refs:
   - "*"
   priority: "HIGH"
+  start_date: "2024-06-18T09:27:00Z"
+  delay: 5
   fail_on_prepare_env_warning: true
   resources: "NANO"
   actions:
