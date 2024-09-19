@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Arithmetic</title>
+    <script>
+        function displayResults() {
+            // Define variables
+            let a = 10;
+            let b = 20;
+
+            // Perform basic arithmetic
+            let sum = a + b;
+            let difference = b - a;
+            let product = a * b;
+            let quotient = b / a;
+
+            // Display results
+            document.getElementById("result").innerHTML =
+                `Sum: ${sum}<br>Difference: ${difference}<br>Product: ${product}<br>Quotient: ${quotient}`;
+        }
+    </script>
+</head>
+<body onload="displayResults()">
+    <h1>Hello, World!</h1>
+    <div id="result"></div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+name: "Storybook_Visual_Test"
+inputs:
+  SVT_STORYBOOK_PORT:
+    type: TEXT
+    info: "Port on which Storybook will run"
+    default: "8080"
+  SVT_DIRECTORY:
+    type: FILESYSTEM_PATH
+    info: "Directory where Storybook static files are located (absolute path)"
+    required: true
+  SVT_SNAPSHOT_WIDTHS:
+    type: TEXT
+    info: "Comma separated list of widths for snapshots"
+    default: "1280,1920"
+  SVT_VERBOSE:
+    type: CHECKBOX
+    info: "Enable verbose output"
+  NODE_TLS_REJECT_UNAUTHORIZED:
+    type: TEXT
+    info: "If 0, skip any TLS certificate checks"
+    default: "1"
+  SNAPSHOTS_TOKEN:
+    type: TEXT
+    info: "Snapshots token"
+    required: true
+  SNAPSHOTS_SERVICE_URL:
+    type: TEXT
+    info: "Snapshots service url"
+    required: true
+execute_commands:
+  - export SNAPSHOTS_BRANCH=$BUDDY_EXECUTION_BRANCH
+  - cd /vts && bun run vts
+docker_image_name: "themultii/vts"
+docker_image_tag: "latest"
+volume_mappings:
+  - /:/buddy
