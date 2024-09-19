@@ -1,0 +1,17 @@
+/* CSS doesn't handle arithmetic or dynamic output, but you can style the output */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: blue;
+  }
+  
+  .results {
+    font-size: 18px;
+  }
+  
+  .result-item {
+    margin-bottom: 10px;
+  }
+  
