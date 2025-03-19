@@ -1,0 +1,9 @@
+xn--ldtx91i.com:
+  records:
+    '@':
+    - type: SOA
+      values: bison.qikdevns.net. hostmaster.xn--ldtx91i.com. 2025031901 10800 3600 604800 3600
+    - type: NS
+      values:
+      - ns3.dns.com.
+      - ns4.dns.com.
