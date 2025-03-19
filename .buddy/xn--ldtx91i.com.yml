@@ -7,3 +7,6 @@ xn--ldtx91i.com:
       values:
       - ns3.dns.com.
       - ns4.dns.com.
+    dupa:
+    - type: A
+      values: 2.2.2.1
