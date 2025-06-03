@@ -1,4 +1,4 @@
-- pipeline: "aaaa"
+- pipeline: "aaaaa"
   refs:
   - "refs/heads/master"
   events:
